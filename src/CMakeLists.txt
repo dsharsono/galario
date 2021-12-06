@@ -82,7 +82,7 @@ if (CUDA_FOUND)
   # maximum compatibility with future GPUs, we don't specify an exact GPU code
   # like such as sm_53. The code is JIT compiled incurring a startup delay.
   # http://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#further-mechanisms
-  list(APPEND CUDA_NVCC_FLAGS --gpu-architecture=compute_30 --gpu-code=compute_30)
+  list(APPEND CUDA_NVCC_FLAGS --gpu-architecture=compute_50 --gpu-code=compute_50)
 
   # Issue with cuda 7.5 on Ubuntu 16.04
   # https://github.com/BVLC/caffe/issues/4046
